@@ -13,3 +13,8 @@
 
 ## Features
 * PubSubClient has been simplified by the Owly library, only variables are your devices details and topics.
+
+## Installing the library
+Simply download the ZIP file and add it to your Arduino IDE, following this guide: https://www.arduino.cc/en/Guide/Libraries
+
+<a aria-label="Download Krystal-Hosting/owly-arduino on GitHub" data-style="mega" data-icon="octicon-cloud-download" href="https://github.com/Krystal-Hosting/owly-arduino/archive/master.zip" class="github-button">Download Library ZIP File</a>
