@@ -16,6 +16,13 @@ Owly::Owly(const char *inputuser_username, const char *inputuser_password, Clien
     _pubsubclient.setServer("mqtt.owly.uk", 1883);
 }
 
+void Owly::Publish(char* topic, int int_payload)
+{
+    char payload[10];
+    sprintf(payload, "%d", int_payload);
+    _pubsubclient.publish(topic, payload);
+}
+
 void Owly::Publish(char* topic, char* payload)
 {
      _pubsubclient.publish(topic, payload);
