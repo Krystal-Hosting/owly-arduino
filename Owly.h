@@ -11,8 +11,8 @@ class Owly
         Owly(const char *inputuser_username, const char *inputuser_password, Client& client);
         boolean Connect();
         void Loop();
-    void Publish(char* topic, int int_payload);
-    void Publish(char* topic, char* payload);
+        void Publish(char* topic, int int_payload);
+        void Publish(char* topic, char* payload);
         void Blink(int time);
     
     private:
