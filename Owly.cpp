@@ -35,5 +35,10 @@ boolean Owly::Connect()
 
 void Owly::Loop()
 {
+    if (!_pubsubclient.connected())
+    {
+        _pubsubclient.connect(this->_clientid, this->_inputuser_username, this->_inputuser_password);
+    }
+    
     _pubsubclient.loop();
 }
